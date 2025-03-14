@@ -1,0 +1,549 @@
+Incident Identifier: 92330116-30E1-4DC5-B0E8-61D65F38701C
+Hardware Model:      iPhone11,6
+Process:             CabalR [4465]
+Path:                /private/var/containers/Bundle/Application/6C09CAF2-7842-433B-9616-922028E12B51/CabalR.app/CabalR
+Identifier:          com.estgames.cabalr.kr.ls
+Version:             2.0.0 (11.0)
+AppStoreTools:       16C7015
+AppVariant:          1:iPhone11,6:16
+Beta:                YES
+Code Type:           ARM-64 (Native)
+Role:                Foreground
+Parent Process:      launchd [1]
+Coalition:           com.estgames.cabalr.kr.ls [517]
+
+Date/Time:           2025-03-15 03:20:28.9089 +0900
+Launch Time:         2025-03-15 01:23:22.5599 +0900
+OS Version:          iPhone OS 16.5 (20F66)
+Release Type:        User
+Baseband Version:    5.02.02
+Report Version:      104
+
+Exception Type:  EXC_CRASH (SIGABRT)
+Exception Codes: 0x0000000000000000, 0x0000000000000000
+Triggered by Thread:  3
+
+
+Thread 0:
+0   libsystem_kernel.dylib        	0x00000001ea943c84 mach_msg2_trap + 8 (:-1)
+1   libsystem_kernel.dylib        	0x00000001ea956e2c mach_msg_overwrite + 540 (mach_msg.c:0)
+2   libsystem_kernel.dylib        	0x00000001ea9441c8 mach_msg + 24 (mach_msg.c:323)
+3   CoreFoundation                	0x00000001aba50024 __CFRunLoopServiceMachPort + 160 (CFRunLoop.c:2622)
+4   CoreFoundation                	0x00000001aba51250 __CFRunLoopRun + 1208 (CFRunLoop.c:3005)
+5   CoreFoundation                	0x00000001aba563ec CFRunLoopRunSpecific + 612 (CFRunLoop.c:3418)
+6   GraphicsServices              	0x00000001e6f1b35c GSEventRunModal + 164 (GSEvent.c:2196)
+7   UIKitCore                     	0x00000001adde36e8 -[UIApplication _run] + 888 (UIApplication.m:3782)
+8   UIKitCore                     	0x00000001adde334c UIApplicationMain + 340 (UIApplication.m:5372)
+9   CabalR                        	0x0000000101b2a238 0x100a10000 + 17932856
+10  dyld                          	0x00000001caf56dec start + 2220 (dyldMain.cpp:1165)
+
+Thread 1:
+0   libsystem_pthread.dylib       	0x000000020b78cb74 start_wqthread + 0 (:-1)
+
+Thread 2 name:
+Thread 2:
+0   libsystem_kernel.dylib        	0x00000001ea943c84 mach_msg2_trap + 8 (:-1)
+1   libsystem_kernel.dylib        	0x00000001ea956e2c mach_msg_overwrite + 540 (mach_msg.c:0)
+2   libsystem_kernel.dylib        	0x00000001ea9441c8 mach_msg + 24 (mach_msg.c:323)
+3   CoreFoundation                	0x00000001aba50024 __CFRunLoopServiceMachPort + 160 (CFRunLoop.c:2622)
+4   CoreFoundation                	0x00000001aba51250 __CFRunLoopRun + 1208 (CFRunLoop.c:3005)
+5   CoreFoundation                	0x00000001aba563ec CFRunLoopRunSpecific + 612 (CFRunLoop.c:3418)
+6   Foundation                    	0x00000001a5cdefd4 -[NSRunLoop(NSRunLoop) runMode:beforeDate:] + 212 (NSRunLoop.m:373)
+7   Foundation                    	0x00000001a5cdeebc -[NSRunLoop(NSRunLoop) runUntilDate:] + 64 (NSRunLoop.m:420)
+8   UIKitCore                     	0x00000001adf163fc -[UIEventFetcher threadMain] + 416 (UIEventFetcher.m:1376)
+9   Foundation                    	0x00000001a5cf8544 __NSThread__start__ + 716 (NSThread.m:963)
+10  libsystem_pthread.dylib       	0x000000020b78d6b8 _pthread_start + 148 (pthread.c:893)
+11  libsystem_pthread.dylib       	0x000000020b78cb88 thread_start + 8 (:-1)
+
+Thread 3 Crashed:
+0   libsystem_kernel.dylib        	0x00000001ea94a558 __pthread_kill + 8 (:-1)
+1   libsystem_c.dylib             	0x00000001b2f5fc04 __abort + 128 (abort.c:155)
+2   libsystem_c.dylib             	0x00000001b2f07184 abort + 192 (abort.c:126)
+3   libsystem_malloc.dylib        	0x00000001b9e6f0e4 malloc_vreport + 908 (malloc_printf.c:220)
+4   libsystem_malloc.dylib        	0x00000001b9e6f2c8 malloc_report + 64 (malloc_printf.c:229)
+5   libsystem_malloc.dylib        	0x00000001b9e6ab70 find_zone_and_free + 308 (malloc.c:2150)
+6   libc++.1.dylib                	0x00000001ba02aea0 std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::__grow_by(unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long) + 232 (string:2399)
+7   libc++.1.dylib                	0x00000001ba02b9e0 std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::push_back(char) + 108 (string:2753)
+8   CabalR                        	0x0000000102362be0 0x100a10000 + 26553312
+9   CabalR                        	0x00000001023657f0 0x100a10000 + 26564592
+10  CabalR                        	0x00000001023613e0 0x100a10000 + 26547168
+11  CabalR                        	0x00000001023611e4 0x100a10000 + 26546660
+12  CabalR                        	0x00000001033f7934 0x100a10000 + 43940148
+13  CabalR                        	0x00000001033f54a0 0x100a10000 + 43930784
+14  CabalR                        	0x000000010236098c 0x100a10000 + 26544524
+15  CabalR                        	0x0000000102ffbef0 0x100a10000 + 39763696
+16  CabalR                        	0x0000000102ffbe2c 0x100a10000 + 39763500
+17  CabalR                        	0x0000000102e67c78 0x100a10000 + 38108280
+18  CabalR                        	0x0000000102ff5be0 0x100a10000 + 39738336
+19  CabalR                        	0x0000000102ff5de8 0x100a10000 + 39738856
+20  CabalR                        	0x00000001022f9e20 0x100a10000 + 26123808
+21  CabalR                        	0x0000000104f0ec48 0x100a10000 + 72346696
+22  CabalR                        	0x000000010572f11c 0x100a10000 + 80867612
+23  CabalR                        	0x00000001051e5260 0x100a10000 + 75321952
+24  CabalR                        	0x00000001051e5828 0x100a10000 + 75323432
+25  CabalR                        	0x00000001023a6a70 0x100a10000 + 26831472
+26  CabalR                        	0x00000001023a6fc4 0x100a10000 + 26832836
+27  CabalR                        	0x0000000105718f60 0x100a10000 + 80777056
+28  CabalR                        	0x00000001056b4558 0x100a10000 + 80364888
+29  CabalR                        	0x00000001056b170c 0x100a10000 + 80353036
+30  CabalR                        	0x00000001056b2d14 0x100a10000 + 80358676
+31  CabalR                        	0x00000001051ca9a8 0x100a10000 + 75213224
+32  CabalR                        	0x0000000101b28a4c 0x100a10000 + 17926732
+33  CabalR                        	0x0000000103b227ec 0x100a10000 + 51455980
+34  Foundation                    	0x00000001a5cf8544 __NSThread__start__ + 716 (NSThread.m:963)
+35  libsystem_pthread.dylib       	0x000000020b78d6b8 _pthread_start + 148 (pthread.c:893)
+36  libsystem_pthread.dylib       	0x000000020b78cb88 thread_start + 8 (:-1)
+
+Thread 4 name:
+Thread 4:
+0   libsystem_kernel.dylib        	0x00000001ea944558 __psynch_cvwait + 8 (:-1)
+1   CabalR                        	0x00000001037b25fc 0x100a10000 + 47851004
+2   CabalR                        	0x0000000103790be0 0x100a10000 + 47713248
+3   CabalR                        	0x00000001037909d8 0x100a10000 + 47712728
+4   CabalR                        	0x00000001037908a4 0x100a10000 + 47712420
+5   CabalR                        	0x00000001037d3cb0 0x100a10000 + 47987888
+6   CabalR                        	0x00000001037bc42c 0x100a10000 + 47891500
+7   libsystem_pthread.dylib       	0x000000020b78d6b8 _pthread_start + 148 (pthread.c:893)
+8   libsystem_pthread.dylib       	0x000000020b78cb88 thread_start + 8 (:-1)
+
+Thread 5 name:
+Thread 5:
+0   libsystem_kernel.dylib        	0x00000001ea944558 __psynch_cvwait + 8 (:-1)
+1   CabalR                        	0x00000001037b25fc 0x100a10000 + 47851004
+2   CabalR                        	0x0000000103790be0 0x100a10000 + 47713248
+3   CabalR                        	0x00000001037909d8 0x100a10000 + 47712728
+4   CabalR                        	0x00000001037908a4 0x100a10000 + 47712420
+5   CabalR                        	0x00000001037d3cb0 0x100a10000 + 47987888
+6   CabalR                        	0x00000001037bc42c 0x100a10000 + 47891500
+7   libsystem_pthread.dylib       	0x000000020b78d6b8 _pthread_start + 148 (pthread.c:893)
+8   libsystem_pthread.dylib       	0x000000020b78cb88 thread_start + 8 (:-1)
+
+Thread 6 name:
+Thread 6:
+0   libsystem_kernel.dylib        	0x00000001ea944558 __psynch_cvwait + 8 (:-1)
+1   CabalR                        	0x00000001037b25fc 0x100a10000 + 47851004
+2   CabalR                        	0x0000000103790be0 0x100a10000 + 47713248
+3   CabalR                        	0x00000001037909d8 0x100a10000 + 47712728
+4   CabalR                        	0x00000001037908a4 0x100a10000 + 47712420
+5   CabalR                        	0x00000001037d3cb0 0x100a10000 + 47987888
+6   CabalR                        	0x00000001037bc42c 0x100a10000 + 47891500
+7   libsystem_pthread.dylib       	0x000000020b78d6b8 _pthread_start + 148 (pthread.c:893)
+8   libsystem_pthread.dylib       	0x000000020b78cb88 thread_start + 8 (:-1)
+
+Thread 7 name:
+Thread 7:
+0   libsystem_kernel.dylib        	0x00000001ea944558 __psynch_cvwait + 8 (:-1)
+1   CabalR                        	0x00000001037b25fc 0x100a10000 + 47851004
+2   CabalR                        	0x0000000103790be0 0x100a10000 + 47713248
+3   CabalR                        	0x00000001037909d8 0x100a10000 + 47712728
+4   CabalR                        	0x00000001037908a4 0x100a10000 + 47712420
+5   CabalR                        	0x00000001037d3cb0 0x100a10000 + 47987888
+6   CabalR                        	0x00000001037bc42c 0x100a10000 + 47891500
+7   libsystem_pthread.dylib       	0x000000020b78d6b8 _pthread_start + 148 (pthread.c:893)
+8   libsystem_pthread.dylib       	0x000000020b78cb88 thread_start + 8 (:-1)
+
+Thread 8 name:
+Thread 8:
+0   libsystem_kernel.dylib        	0x00000001ea944558 __psynch_cvwait + 8 (:-1)
+1   CabalR                        	0x00000001037b25fc 0x100a10000 + 47851004
+2   CabalR                        	0x00000001037d718c 0x100a10000 + 48001420
+3   CabalR                        	0x00000001037d3cb0 0x100a10000 + 47987888
+4   CabalR                        	0x00000001037bc42c 0x100a10000 + 47891500
+5   libsystem_pthread.dylib       	0x000000020b78d6b8 _pthread_start + 148 (pthread.c:893)
+6   libsystem_pthread.dylib       	0x000000020b78cb88 thread_start + 8 (:-1)
+
+Thread 9 name:
+Thread 9:
+0   libsystem_kernel.dylib        	0x00000001ea944558 __psynch_cvwait + 8 (:-1)
+1   CabalR                        	0x00000001037b25fc 0x100a10000 + 47851004
+2   CabalR                        	0x00000001037d718c 0x100a10000 + 48001420
+3   CabalR                        	0x00000001037d3cb0 0x100a10000 + 47987888
+4   CabalR                        	0x00000001037bc42c 0x100a10000 + 47891500
+5   libsystem_pthread.dylib       	0x000000020b78d6b8 _pthread_start + 148 (pthread.c:893)
+6   libsystem_pthread.dylib       	0x000000020b78cb88 thread_start + 8 (:-1)
+
+Thread 10 name:
+Thread 10:
+0   libsystem_kernel.dylib        	0x00000001ea944558 __psynch_cvwait + 8 (:-1)
+1   CabalR                        	0x00000001037b25fc 0x100a10000 + 47851004
+2   CabalR                        	0x00000001037d718c 0x100a10000 + 48001420
+3   CabalR                        	0x00000001037d3cb0 0x100a10000 + 47987888
+4   CabalR                        	0x00000001037bc42c 0x100a10000 + 47891500
+5   libsystem_pthread.dylib       	0x000000020b78d6b8 _pthread_start + 148 (pthread.c:893)
+6   libsystem_pthread.dylib       	0x000000020b78cb88 thread_start + 8 (:-1)
+
+Thread 11 name:
+Thread 11:
+0   libsystem_kernel.dylib        	0x00000001ea944558 __psynch_cvwait + 8 (:-1)
+1   CabalR                        	0x00000001037b25fc 0x100a10000 + 47851004
+2   CabalR                        	0x00000001037d718c 0x100a10000 + 48001420
+3   CabalR                        	0x00000001037d3cb0 0x100a10000 + 47987888
+4   CabalR                        	0x00000001037bc42c 0x100a10000 + 47891500
+5   libsystem_pthread.dylib       	0x000000020b78d6b8 _pthread_start + 148 (pthread.c:893)
+6   libsystem_pthread.dylib       	0x000000020b78cb88 thread_start + 8 (:-1)
+
+Thread 12 name:
+Thread 12:
+0   libsystem_kernel.dylib        	0x00000001ea944558 __psynch_cvwait + 8 (:-1)
+1   CabalR                        	0x00000001037b25fc 0x100a10000 + 47851004
+2   CabalR                        	0x00000001037d718c 0x100a10000 + 48001420
+3   CabalR                        	0x00000001037d3cb0 0x100a10000 + 47987888
+4   CabalR                        	0x00000001037bc42c 0x100a10000 + 47891500
+5   libsystem_pthread.dylib       	0x000000020b78d6b8 _pthread_start + 148 (pthread.c:893)
+6   libsystem_pthread.dylib       	0x000000020b78cb88 thread_start + 8 (:-1)
+
+Thread 13 name:
+Thread 13:
+0   libsystem_kernel.dylib        	0x00000001ea944558 __psynch_cvwait + 8 (:-1)
+1   CabalR                        	0x00000001037b25fc 0x100a10000 + 47851004
+2   CabalR                        	0x00000001037d718c 0x100a10000 + 48001420
+3   CabalR                        	0x00000001037d3cb0 0x100a10000 + 47987888
+4   CabalR                        	0x00000001037bc42c 0x100a10000 + 47891500
+5   libsystem_pthread.dylib       	0x000000020b78d6b8 _pthread_start + 148 (pthread.c:893)
+6   libsystem_pthread.dylib       	0x000000020b78cb88 thread_start + 8 (:-1)
+
+Thread 14 name:
+Thread 14:
+0   libsystem_kernel.dylib        	0x00000001ea944558 __psynch_cvwait + 8 (:-1)
+1   CabalR                        	0x00000001037b25fc 0x100a10000 + 47851004
+2   CabalR                        	0x00000001037d718c 0x100a10000 + 48001420
+3   CabalR                        	0x00000001037d3cb0 0x100a10000 + 47987888
+4   CabalR                        	0x00000001037bc42c 0x100a10000 + 47891500
+5   libsystem_pthread.dylib       	0x000000020b78d6b8 _pthread_start + 148 (pthread.c:893)
+6   libsystem_pthread.dylib       	0x000000020b78cb88 thread_start + 8 (:-1)
+
+Thread 15 name:
+Thread 15:
+0   libsystem_kernel.dylib        	0x00000001ea944558 __psynch_cvwait + 8 (:-1)
+1   CabalR                        	0x00000001037b25fc 0x100a10000 + 47851004
+2   CabalR                        	0x00000001037d718c 0x100a10000 + 48001420
+3   CabalR                        	0x00000001037d3cb0 0x100a10000 + 47987888
+4   CabalR                        	0x00000001037bc42c 0x100a10000 + 47891500
+5   libsystem_pthread.dylib       	0x000000020b78d6b8 _pthread_start + 148 (pthread.c:893)
+6   libsystem_pthread.dylib       	0x000000020b78cb88 thread_start + 8 (:-1)
+
+Thread 16 name:
+Thread 16:
+0   libsystem_kernel.dylib        	0x00000001ea944558 __psynch_cvwait + 8 (:-1)
+1   CabalR                        	0x00000001037b25fc 0x100a10000 + 47851004
+2   CabalR                        	0x00000001037d718c 0x100a10000 + 48001420
+3   CabalR                        	0x00000001037d3cb0 0x100a10000 + 47987888
+4   CabalR                        	0x00000001037bc42c 0x100a10000 + 47891500
+5   libsystem_pthread.dylib       	0x000000020b78d6b8 _pthread_start + 148 (pthread.c:893)
+6   libsystem_pthread.dylib       	0x000000020b78cb88 thread_start + 8 (:-1)
+
+Thread 17 name:
+Thread 17:
+0   libsystem_kernel.dylib        	0x00000001ea944558 __psynch_cvwait + 8 (:-1)
+1   CabalR                        	0x00000001037b25fc 0x100a10000 + 47851004
+2   CabalR                        	0x00000001037d718c 0x100a10000 + 48001420
+3   CabalR                        	0x00000001037d3cb0 0x100a10000 + 47987888
+4   CabalR                        	0x00000001037bc42c 0x100a10000 + 47891500
+5   libsystem_pthread.dylib       	0x000000020b78d6b8 _pthread_start + 148 (pthread.c:893)
+6   libsystem_pthread.dylib       	0x000000020b78cb88 thread_start + 8 (:-1)
+
+Thread 18:
+0   libsystem_kernel.dylib        	0x00000001ea943c84 mach_msg2_trap + 8 (:-1)
+1   libsystem_kernel.dylib        	0x00000001ea956e2c mach_msg_overwrite + 540 (mach_msg.c:0)
+2   libsystem_kernel.dylib        	0x00000001ea9441c8 mach_msg + 24 (mach_msg.c:323)
+3   CoreFoundation                	0x00000001aba50024 __CFRunLoopServiceMachPort + 160 (CFRunLoop.c:2622)
+4   CoreFoundation                	0x00000001aba51250 __CFRunLoopRun + 1208 (CFRunLoop.c:3005)
+5   CoreFoundation                	0x00000001aba563ec CFRunLoopRunSpecific + 612 (CFRunLoop.c:3418)
+6   Foundation                    	0x00000001a5cdefd4 -[NSRunLoop(NSRunLoop) runMode:beforeDate:] + 212 (NSRunLoop.m:373)
+7   Foundation                    	0x00000001a5cdee68 -[NSRunLoop(NSRunLoop) run] + 64 (NSRunLoop.m:398)
+8   Foundation                    	0x00000001a5cf8544 __NSThread__start__ + 716 (NSThread.m:963)
+9   libsystem_pthread.dylib       	0x000000020b78d6b8 _pthread_start + 148 (pthread.c:893)
+10  libsystem_pthread.dylib       	0x000000020b78cb88 thread_start + 8 (:-1)
+
+Thread 19 name:
+Thread 19:
+0   libsystem_kernel.dylib        	0x00000001ea944558 __psynch_cvwait + 8 (:-1)
+1   CabalR                        	0x00000001037b25fc 0x100a10000 + 47851004
+2   CabalR                        	0x0000000104e4df7c 0x100a10000 + 71556988
+3   CabalR                        	0x00000001037d3cb0 0x100a10000 + 47987888
+4   CabalR                        	0x00000001037bc42c 0x100a10000 + 47891500
+5   libsystem_pthread.dylib       	0x000000020b78d6b8 _pthread_start + 148 (pthread.c:893)
+6   libsystem_pthread.dylib       	0x000000020b78cb88 thread_start + 8 (:-1)
+
+Thread 20 name:
+Thread 20:
+0   libsystem_kernel.dylib        	0x00000001ea944558 __psynch_cvwait + 8 (:-1)
+1   CabalR                        	0x00000001037b2684 0x100a10000 + 47851140
+2   CabalR                        	0x00000001039781b8 0x100a10000 + 49709496
+3   CabalR                        	0x0000000103978dcc 0x100a10000 + 49712588
+4   CabalR                        	0x00000001037d3cb0 0x100a10000 + 47987888
+5   CabalR                        	0x00000001037bc42c 0x100a10000 + 47891500
+6   libsystem_pthread.dylib       	0x000000020b78d6b8 _pthread_start + 148 (pthread.c:893)
+7   libsystem_pthread.dylib       	0x000000020b78cb88 thread_start + 8 (:-1)
+
+Thread 21 name:
+Thread 21:
+0   libsystem_kernel.dylib        	0x00000001ea944558 __psynch_cvwait + 8 (:-1)
+1   CabalR                        	0x00000001037b2684 0x100a10000 + 47851140
+2   CabalR                        	0x0000000104cf15d0 0x100a10000 + 70129104
+3   CabalR                        	0x00000001037d3cb0 0x100a10000 + 47987888
+4   CabalR                        	0x00000001037bc42c 0x100a10000 + 47891500
+5   libsystem_pthread.dylib       	0x000000020b78d6b8 _pthread_start + 148 (pthread.c:893)
+6   libsystem_pthread.dylib       	0x000000020b78cb88 thread_start + 8 (:-1)
+
+Thread 22 name:
+Thread 22:
+0   libsystem_kernel.dylib        	0x00000001ea944558 __psynch_cvwait + 8 (:-1)
+1   CabalR                        	0x00000001037b25fc 0x100a10000 + 47851004
+2   CabalR                        	0x00000001037911ac 0x100a10000 + 47714732
+3   CabalR                        	0x0000000103790db8 0x100a10000 + 47713720
+4   CabalR                        	0x0000000105012ff8 0x100a10000 + 73412600
+5   CabalR                        	0x00000001037d3cb0 0x100a10000 + 47987888
+6   CabalR                        	0x00000001037bc42c 0x100a10000 + 47891500
+7   libsystem_pthread.dylib       	0x000000020b78d6b8 _pthread_start + 148 (pthread.c:893)
+8   libsystem_pthread.dylib       	0x000000020b78cb88 thread_start + 8 (:-1)
+
+Thread 23 name:
+Thread 23:
+0   libsystem_kernel.dylib        	0x00000001ea944558 __psynch_cvwait + 8 (:-1)
+1   CabalR                        	0x00000001037b2684 0x100a10000 + 47851140
+2   CabalR                        	0x0000000103a3ef9c 0x100a10000 + 50524060
+3   CabalR                        	0x00000001037d3cb0 0x100a10000 + 47987888
+4   CabalR                        	0x00000001037bc42c 0x100a10000 + 47891500
+5   libsystem_pthread.dylib       	0x000000020b78d6b8 _pthread_start + 148 (pthread.c:893)
+6   libsystem_pthread.dylib       	0x000000020b78cb88 thread_start + 8 (:-1)
+
+Thread 24 name:
+Thread 24:
+0   libsystem_kernel.dylib        	0x00000001ea943c84 mach_msg2_trap + 8 (:-1)
+1   libsystem_kernel.dylib        	0x00000001ea956e2c mach_msg_overwrite + 540 (mach_msg.c:0)
+2   libsystem_kernel.dylib        	0x00000001ea9441c8 mach_msg + 24 (mach_msg.c:323)
+3   CoreFoundation                	0x00000001aba50024 __CFRunLoopServiceMachPort + 160 (CFRunLoop.c:2622)
+4   CoreFoundation                	0x00000001aba51250 __CFRunLoopRun + 1208 (CFRunLoop.c:3005)
+5   CoreFoundation                	0x00000001aba563ec CFRunLoopRunSpecific + 612 (CFRunLoop.c:3418)
+6   CFNetwork                     	0x00000001acc41580 +[__CFN_CoreSchedulingSetRunnable _run:] + 392 (CoreSchedulingSet.mm:1562)
+7   Foundation                    	0x00000001a5cf8544 __NSThread__start__ + 716 (NSThread.m:963)
+8   libsystem_pthread.dylib       	0x000000020b78d6b8 _pthread_start + 148 (pthread.c:893)
+9   libsystem_pthread.dylib       	0x000000020b78cb88 thread_start + 8 (:-1)
+
+Thread 25 name:
+Thread 25:
+0   libsystem_kernel.dylib        	0x00000001ea943c84 mach_msg2_trap + 8 (:-1)
+1   libsystem_kernel.dylib        	0x00000001ea956e2c mach_msg_overwrite + 540 (mach_msg.c:0)
+2   libsystem_kernel.dylib        	0x00000001ea9441c8 mach_msg + 24 (mach_msg.c:323)
+3   CoreFoundation                	0x00000001aba50024 __CFRunLoopServiceMachPort + 160 (CFRunLoop.c:2622)
+4   CoreFoundation                	0x00000001aba51250 __CFRunLoopRun + 1208 (CFRunLoop.c:3005)
+5   CoreFoundation                	0x00000001aba563ec CFRunLoopRunSpecific + 612 (CFRunLoop.c:3418)
+6   CoreFoundation                	0x00000001aba98ea4 CFRunLoopRun + 64 (CFRunLoop.c:3444)
+7   CoreMotion                    	0x00000001b6fda248 CLMotionCore::runMotionThread(void*) + 1208 (CLMotionCore.mm:376)
+8   libsystem_pthread.dylib       	0x000000020b78d6b8 _pthread_start + 148 (pthread.c:893)
+9   libsystem_pthread.dylib       	0x000000020b78cb88 thread_start + 8 (:-1)
+
+Thread 26:
+0   libsystem_kernel.dylib        	0x00000001ea944144 __semwait_signal + 8 (:-1)
+1   libsystem_c.dylib             	0x00000001b2f00b1c sleep + 52 (sleep.c:62)
+2   CabalR                        	0x0000000100ee81e8 0x100a10000 + 5079528
+3   CabalR                        	0x0000000100ee8210 0x100a10000 + 5079568
+4   Foundation                    	0x00000001a5cf8544 __NSThread__start__ + 716 (NSThread.m:963)
+5   libsystem_pthread.dylib       	0x000000020b78d6b8 _pthread_start + 148 (pthread.c:893)
+6   libsystem_pthread.dylib       	0x000000020b78cb88 thread_start + 8 (:-1)
+
+Thread 27:
+0   libsystem_kernel.dylib        	0x00000001ea944144 __semwait_signal + 8 (:-1)
+1   libsystem_c.dylib             	0x00000001b2f00b1c sleep + 52 (sleep.c:62)
+2   CabalR                        	0x0000000100cb4220 0x100a10000 + 2769440
+3   CabalR                        	0x0000000100cb4eb4 0x100a10000 + 2772660
+4   Foundation                    	0x00000001a5cf8544 __NSThread__start__ + 716 (NSThread.m:963)
+5   libsystem_pthread.dylib       	0x000000020b78d6b8 _pthread_start + 148 (pthread.c:893)
+6   libsystem_pthread.dylib       	0x000000020b78cb88 thread_start + 8 (:-1)
+
+Thread 28:
+0   libsystem_kernel.dylib        	0x00000001ea944144 __semwait_signal + 8 (:-1)
+1   libsystem_c.dylib             	0x00000001b2f00b1c sleep + 52 (sleep.c:62)
+2   CabalR                        	0x0000000100cb4220 0x100a10000 + 2769440
+3   CabalR                        	0x0000000100cb4eb4 0x100a10000 + 2772660
+4   Foundation                    	0x00000001a5cf8544 __NSThread__start__ + 716 (NSThread.m:963)
+5   libsystem_pthread.dylib       	0x000000020b78d6b8 _pthread_start + 148 (pthread.c:893)
+6   libsystem_pthread.dylib       	0x000000020b78cb88 thread_start + 8 (:-1)
+
+Thread 29:
+0   libsystem_kernel.dylib        	0x00000001ea944144 __semwait_signal + 8 (:-1)
+1   libsystem_c.dylib             	0x00000001b2f00b1c sleep + 52 (sleep.c:62)
+2   CabalR                        	0x000000010125d390 0x100a10000 + 8704912
+3   libsystem_pthread.dylib       	0x000000020b78d6b8 _pthread_start + 148 (pthread.c:893)
+4   libsystem_pthread.dylib       	0x000000020b78cb88 thread_start + 8 (:-1)
+
+Thread 30:
+0   libsystem_pthread.dylib       	0x000000020b78cb74 start_wqthread + 0 (:-1)
+
+Thread 31 name:
+Thread 31:
+0   libsystem_kernel.dylib        	0x00000001ea943c84 mach_msg2_trap + 8 (:-1)
+1   libsystem_kernel.dylib        	0x00000001ea956e2c mach_msg_overwrite + 540 (mach_msg.c:0)
+2   libsystem_kernel.dylib        	0x00000001ea9441c8 mach_msg + 24 (mach_msg.c:323)
+3   CoreFoundation                	0x00000001aba50024 __CFRunLoopServiceMachPort + 160 (CFRunLoop.c:2622)
+4   CoreFoundation                	0x00000001aba51250 __CFRunLoopRun + 1208 (CFRunLoop.c:3005)
+5   CoreFoundation                	0x00000001aba563ec CFRunLoopRunSpecific + 612 (CFRunLoop.c:3418)
+6   CoreFoundation                	0x00000001aba98ea4 CFRunLoopRun + 64 (CFRunLoop.c:3444)
+7   CoreMedia                     	0x00000001b6b9eb64 FigThreadGlobalNetworkBufferingRunloop + 28 (CommonThread.c:881)
+8   CoreMedia                     	0x00000001b6bf6d24 figThreadMain + 272 (DarwinThread.c:826)
+9   libsystem_pthread.dylib       	0x000000020b78d6b8 _pthread_start + 148 (pthread.c:893)
+10  libsystem_pthread.dylib       	0x000000020b78cb88 thread_start + 8 (:-1)
+
+Thread 32:
+0   libsystem_pthread.dylib       	0x000000020b78cb74 start_wqthread + 0 (:-1)
+
+Thread 33:
+0   libsystem_pthread.dylib       	0x000000020b78cb74 start_wqthread + 0 (:-1)
+
+Thread 34:
+0   libsystem_pthread.dylib       	0x000000020b78cb74 start_wqthread + 0 (:-1)
+
+Thread 35 name:
+Thread 35:
+0   libsystem_kernel.dylib        	0x00000001ea944558 __psynch_cvwait + 8 (:-1)
+1   JavaScriptCore                	0x00000001bf22008c scavenger_thread_main + 1620 (pas_scavenger.c:347)
+2   libsystem_pthread.dylib       	0x000000020b78d6b8 _pthread_start + 148 (pthread.c:893)
+3   libsystem_pthread.dylib       	0x000000020b78cb88 thread_start + 8 (:-1)
+
+Thread 36:
+0   libsystem_pthread.dylib       	0x000000020b78cb74 start_wqthread + 0 (:-1)
+
+Thread 37 name:
+Thread 37:
+0   libsystem_kernel.dylib        	0x00000001ea943c18 semaphore_timedwait_trap + 8 (:-1)
+1   libdispatch.dylib             	0x00000001b2ea7ac4 _dispatch_semaphore_wait_slow + 76 (semaphore.c:116)
+2   libdispatch.dylib             	0x00000001b2eb8718 _dispatch_worker_thread + 324 (queue.c:7229)
+3   libsystem_pthread.dylib       	0x000000020b78d6b8 _pthread_start + 148 (pthread.c:893)
+4   libsystem_pthread.dylib       	0x000000020b78cb88 thread_start + 8 (:-1)
+
+Thread 38 name:
+Thread 38:
+0   libsystem_kernel.dylib        	0x00000001ea943c18 semaphore_timedwait_trap + 8 (:-1)
+1   libdispatch.dylib             	0x00000001b2ea7ac4 _dispatch_semaphore_wait_slow + 76 (semaphore.c:116)
+2   libdispatch.dylib             	0x00000001b2eb8718 _dispatch_worker_thread + 324 (queue.c:7229)
+3   libsystem_pthread.dylib       	0x000000020b78d6b8 _pthread_start + 148 (pthread.c:893)
+4   libsystem_pthread.dylib       	0x000000020b78cb88 thread_start + 8 (:-1)
+
+Thread 39 name:
+Thread 39:
+0   libsystem_kernel.dylib        	0x00000001ea943c84 mach_msg2_trap + 8 (:-1)
+1   libsystem_kernel.dylib        	0x00000001ea956e2c mach_msg_overwrite + 540 (mach_msg.c:0)
+2   libsystem_kernel.dylib        	0x00000001ea9441c8 mach_msg + 24 (mach_msg.c:323)
+3   libEmbeddedSystemAUs.dylib    	0x000000021665b148 void* caulk::thread_proxy<std::__1::tuple<caulk::thread::attributes, AURemoteIO::IOThread::IOThread(AURemoteIO&, caulk::thread::attributes const&, caulk::mach::os_workgroup_managed const&)::'lambda... + 556 (thread.h:189)
+4   libsystem_pthread.dylib       	0x000000020b78d6b8 _pthread_start + 148 (pthread.c:893)
+5   libsystem_pthread.dylib       	0x000000020b78cb88 thread_start + 8 (:-1)
+
+Thread 40 name:
+Thread 40:
+0   libsystem_kernel.dylib        	0x00000001ea944558 __psynch_cvwait + 8 (:-1)
+1   CabalR                        	0x00000001037b25fc 0x100a10000 + 47851004
+2   CabalR                        	0x00000001037911ac 0x100a10000 + 47714732
+3   CabalR                        	0x0000000103790db8 0x100a10000 + 47713720
+4   CabalR                        	0x0000000103ef7360 0x100a10000 + 55472992
+5   CabalR                        	0x0000000103f02528 0x100a10000 + 55518504
+6   CabalR                        	0x00000001037d3cb0 0x100a10000 + 47987888
+7   CabalR                        	0x00000001037bc42c 0x100a10000 + 47891500
+8   libsystem_pthread.dylib       	0x000000020b78d6b8 _pthread_start + 148 (pthread.c:893)
+9   libsystem_pthread.dylib       	0x000000020b78cb88 thread_start + 8 (:-1)
+
+Thread 41 name:
+Thread 41:
+0   libsystem_kernel.dylib        	0x00000001ea944144 __semwait_signal + 8 (:-1)
+1   libsystem_c.dylib             	0x00000001b2ef0554 usleep + 68 (usleep.c:52)
+2   CabalR                        	0x00000001037b23c0 0x100a10000 + 47850432
+3   CabalR                        	0x0000000103f0452c 0x100a10000 + 55526700
+4   CabalR                        	0x00000001037d3cb0 0x100a10000 + 47987888
+5   CabalR                        	0x00000001037bc42c 0x100a10000 + 47891500
+6   libsystem_pthread.dylib       	0x000000020b78d6b8 _pthread_start + 148 (pthread.c:893)
+7   libsystem_pthread.dylib       	0x000000020b78cb88 thread_start + 8 (:-1)
+
+Thread 42:
+0   libsystem_pthread.dylib       	0x000000020b78cb74 start_wqthread + 0 (:-1)
+
+Thread 43:
+0   libsystem_pthread.dylib       	0x000000020b78cb74 start_wqthread + 0 (:-1)
+
+Thread 44:
+0   libsystem_pthread.dylib       	0x000000020b78cb74 start_wqthread + 0 (:-1)
+
+Thread 45:
+0   libsystem_pthread.dylib       	0x000000020b78cb74 start_wqthread + 0 (:-1)
+
+Thread 46 name:
+Thread 46:
+0   libsystem_kernel.dylib        	0x00000001ea944144 __semwait_signal + 8 (:-1)
+1   libsystem_c.dylib             	0x00000001b2ef0554 usleep + 68 (usleep.c:52)
+2   CabalR                        	0x00000001037b23c0 0x100a10000 + 47850432
+3   CabalR                        	0x00000001036b80f8 0x100a10000 + 46825720
+4   CabalR                        	0x00000001037d3cb0 0x100a10000 + 47987888
+5   CabalR                        	0x00000001037bc42c 0x100a10000 + 47891500
+6   libsystem_pthread.dylib       	0x000000020b78d6b8 _pthread_start + 148 (pthread.c:893)
+7   libsystem_pthread.dylib       	0x000000020b78cb88 thread_start + 8 (:-1)
+
+Thread 47 name:
+Thread 47:
+0   libsystem_kernel.dylib        	0x00000001ea943c18 semaphore_timedwait_trap + 8 (:-1)
+1   libdispatch.dylib             	0x00000001b2ea7ac4 _dispatch_semaphore_wait_slow + 76 (semaphore.c:116)
+2   libdispatch.dylib             	0x00000001b2eb8718 _dispatch_worker_thread + 324 (queue.c:7229)
+3   libsystem_pthread.dylib       	0x000000020b78d6b8 _pthread_start + 148 (pthread.c:893)
+4   libsystem_pthread.dylib       	0x000000020b78cb88 thread_start + 8 (:-1)
+
+Thread 48 name:
+Thread 48:
+0   libsystem_kernel.dylib        	0x00000001ea943c18 semaphore_timedwait_trap + 8 (:-1)
+1   libdispatch.dylib             	0x00000001b2ea7ac4 _dispatch_semaphore_wait_slow + 76 (semaphore.c:116)
+2   libdispatch.dylib             	0x00000001b2eb8718 _dispatch_worker_thread + 324 (queue.c:7229)
+3   libsystem_pthread.dylib       	0x000000020b78d6b8 _pthread_start + 148 (pthread.c:893)
+4   libsystem_pthread.dylib       	0x000000020b78cb88 thread_start + 8 (:-1)
+
+Thread 49 name:
+Thread 49:
+0   libsystem_kernel.dylib        	0x00000001ea943c18 semaphore_timedwait_trap + 8 (:-1)
+1   libdispatch.dylib             	0x00000001b2ea7ac4 _dispatch_semaphore_wait_slow + 76 (semaphore.c:116)
+2   libdispatch.dylib             	0x00000001b2eb8718 _dispatch_worker_thread + 324 (queue.c:7229)
+3   libsystem_pthread.dylib       	0x000000020b78d6b8 _pthread_start + 148 (pthread.c:893)
+4   libsystem_pthread.dylib       	0x000000020b78cb88 thread_start + 8 (:-1)
+
+Thread 50 name:
+Thread 50:
+0   libsystem_kernel.dylib        	0x00000001ea944144 __semwait_signal + 8 (:-1)
+1   libsystem_c.dylib             	0x00000001b2ef0554 usleep + 68 (usleep.c:52)
+2   CabalR                        	0x00000001037b23c0 0x100a10000 + 47850432
+3   CabalR                        	0x0000000104eb2950 0x100a10000 + 71969104
+4   CabalR                        	0x0000000104eb2a3c 0x100a10000 + 71969340
+5   CabalR                        	0x00000001037d3cb0 0x100a10000 + 47987888
+6   CabalR                        	0x00000001037bc42c 0x100a10000 + 47891500
+7   libsystem_pthread.dylib       	0x000000020b78d6b8 _pthread_start + 148 (pthread.c:893)
+8   libsystem_pthread.dylib       	0x000000020b78cb88 thread_start + 8 (:-1)
+
+
+Thread 3 crashed with ARM Thread State (64-bit):
+    x0: 0x0000000000000000   x1: 0x0000000000000000   x2: 0x0000000000000000   x3: 0x0000000000000000
+    x4: 0x0000000000000000   x5: 0x0000000000989680   x6: 0x0000000000000001   x7: 0x0000000000000000
+    x8: 0x73dbe9fbe2fb1d34   x9: 0x73dbe9fa8d5e6d34  x10: 0x00000000000003e8  x11: 0x000000000000000a
+   x12: 0x0000000000000000  x13: 0x0000000000000034  x14: 0x0000000136800000  x15: 0x0000000136804080
+   x16: 0x0000000000000148  x17: 0x000000016fa57000  x18: 0x0000000000000000  x19: 0x0000000000000006
+   x20: 0x0000000000007a07  x21: 0x000000016fa570e0  x22: 0x00000001b9e72656  x23: 0x000000016fa55290
+   x24: 0x0000000000000000  x25: 0x0000000000000000  x26: 0x000000016f3efc2b  x27: 0x000000016fa57000
+   x28: 0x000000000000005c   fp: 0x000000016fa54ba0   lr: 0x000000020b793118
+    sp: 0x000000016fa54b80   pc: 0x00000001ea94a558 cpsr: 0x40000000
+   esr: 0x56000080  Address size fault
+
+
+Binary Images:
+        0x100a10000 -         0x106883fff CabalR arm64  <31d968525abf303c83a21635de06a407> /private/var/containers/Bundle/Application/6C09CAF2-7842-433B-9616-922028E12B51/CabalR.app/CabalR
+        0x10dc00000 -         0x10dc0bfff libobjc-trampolines.dylib arm64e  <695a8449aae838b6851cced0b1176f03> /private/preboot/Cryptexes/OS/usr/lib/libobjc-trampolines.dylib
+        0x1a5c9d000 -         0x1a657afff Foundation arm64e  <6e76dc9611af3b2eb71e215f9cc6e822> /System/Library/Frameworks/Foundation.framework/Foundation
+        0x1ab9d7000 -         0x1abdbefff CoreFoundation arm64e  <4230c12242e8383bbeecee7b61f8bb61> /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+        0x1ac9e8000 -         0x1acdb3fff CFNetwork arm64e  <6aafe7c4f1c43020ad1670591c86d7b0> /System/Library/Frameworks/CFNetwork.framework/CFNetwork
+        0x1ada46000 -         0x1af26afff UIKitCore arm64e  <b3834960244b34e49ea0ca4bb44ef0f3> /System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore
+        0x1b2ea3000 -         0x1b2ee9fff libdispatch.dylib arm64e  <bb347f0ef21c360782e6c8d750fdbf8c> /usr/lib/system/libdispatch.dylib
+        0x1b2eea000 -         0x1b2f67ff3 libsystem_c.dylib arm64e  <3548f8ee7a073b678d699c7d42096513> /usr/lib/system/libsystem_c.dylib
+        0x1b6b94000 -         0x1b6cccfff CoreMedia arm64e  <51a7b71a756c33a993f9437e519c77d6> /System/Library/Frameworks/CoreMedia.framework/CoreMedia
+        0x1b6fc7000 -         0x1b73d6fff CoreMotion arm64e  <5798cb68a1343bfcb7b2a335020421c4> /System/Library/Frameworks/CoreMotion.framework/CoreMotion
+        0x1b9e51000 -         0x1b9e74ff3 libsystem_malloc.dylib arm64e  <8c0013b07b9930bb9950c6d2229b69a5> /usr/lib/system/libsystem_malloc.dylib
+        0x1ba011000 -         0x1ba09dff7 libc++.1.dylib arm64e  <ffa7a30db5203cda8a7f63c6cd922df9> /usr/lib/libc++.1.dylib
+        0x1bf10c000 -         0x1c0832fff JavaScriptCore arm64e  <a246b25e5c673f79abf6db675d81b7ec> /System/Library/Frameworks/JavaScriptCore.framework/JavaScriptCore
+        0x1caf41000 -         0x1cafc6a23 dyld arm64e  <8a423f3fb318315e99c705ee532e9c0d> /usr/lib/dyld
+        0x1e6f1a000 -         0x1e6f22fff GraphicsServices arm64e  <e830ad84d6123b6b8de7ea61a786d132> /System/Library/PrivateFrameworks/GraphicsServices.framework/GraphicsServices
+        0x1ea943000 -         0x1ea97aff7 libsystem_kernel.dylib arm64e  <2f78311097393f18a2345fb92512529d> /usr/lib/system/libsystem_kernel.dylib
+        0x20b78c000 -         0x20b797ff3 libsystem_pthread.dylib arm64e  <8894310a745f340799f01fd54442561d> /usr/lib/system/libsystem_pthread.dylib
+        0x2165b3000 -         0x2166bdff7 libEmbeddedSystemAUs.dylib arm64e  <c74b179e1edf373e9c4bb2229c37a9ab> /System/Library/Frameworks/AudioToolbox.framework/libEmbeddedSystemAUs.dylib
+
+EOF
